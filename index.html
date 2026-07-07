@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for a fresh graduate Computer Science student."
+    />
+    <title>Fresh Graduate CS Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">DH</div>
+        <nav class="topnav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="portfolio-card">
+        <section class="hero">
+          <div class="hero-profile">
+            <div class="avatar-wrap">
+              <div class="avatar" aria-hidden="true">DG</div>
+              <span class="status-dot" aria-hidden="true"></span>
+            </div>
+            <div class="hero-copy">
+              <p class="eyebrow">Fresh Graduate · Computer Science</p>
+              <h1>Dhruv Goyal</h1>
+              <h2>Software Developer | Problem Solver | Builder</h2>
+              <p class="location">London, United Kingdom</p>
+            </div>
+          </div>
+
+          <p class="intro" id="about">
+            I am a recently graduated Computer Science student who enjoys turning
+            ideas into clean, useful products. I build responsive web apps,
+            focus on strong fundamentals, and learn quickly from every project I
+            ship.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Contact Me</a>
+            <a class="button button-secondary" href="#projects">View Projects</a>
+          </div>
+
+          <div class="quick-links" aria-label="Social links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:hello@example.com">Email</a>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="section-heading">
+            <p>Current tech stack</p>
+            <h3>Tools I use to build and learn</h3>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">HTML5</article>
+            <article class="skill-card">CSS3</article>
+            <article class="skill-card">JavaScript</article>
+            <article class="skill-card">React</article>
+            <article class="skill-card">Node.js</article>
+            <article class="skill-card">TypeScript</article>
+            <article class="skill-card">Git</article>
+            <article class="skill-card">SQL</article>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <p>Recent projects</p>
+            <h3>Selected work that shows my range</h3>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card project-card-a">
+              <div class="project-tag">Web App</div>
+              <h4>Study Planner Dashboard</h4>
+              <p>
+                A productivity dashboard for students to organise tasks, track
+                deadlines, and manage weekly goals.
+              </p>
+            </article>
+            <article class="project-card project-card-b">
+              <div class="project-tag">Frontend</div>
+              <h4>Campus Events Platform</h4>
+              <p>
+                A responsive event discovery interface built to surface club
+                activities, announcements, and sign-ups.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-panel" id="contact">
+          <div class="section-heading">
+            <p>Let’s connect</p>
+            <h3>Open to graduate roles and internships</h3>
+          </div>
+          <p>
+            If you are hiring for a junior developer, software engineer, or
+            internship position, I’d love to hear from you.
+          </p>
+          <a class="button button-primary" href="mailto:hello@example.com">Send an email</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
