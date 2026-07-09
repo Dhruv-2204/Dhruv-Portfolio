@@ -19,7 +19,7 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <div class="brand">DH</div>
+        <div class="brand">DR</div>
         <nav class="topnav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -29,36 +29,44 @@
       </header>
 
       <main class="portfolio-card">
-        <section class="hero">
-          <div class="hero-profile">
-            <div class="avatar-wrap">
-              <div class="avatar" aria-hidden="true">DR</div>
-              <span class="status-dot" aria-hidden="true"></span>
+        <section class="intro-panel" id="about">
+          <div class="intro-copy">
+            <p class="eyebrow">Fresh Graduate · Computer Science</p>
+            <h1>Dhruv Ramachundrah</h1>
+            <h2>Software Developer | Problem Solver</h2>
+            <p class="location">Mauritius</p>
+            <p class="intro">
+              I am a recently graduated Computer Science student who enjoys turning
+              ideas into clean, useful products. I build responsive web apps,
+              focus on strong fundamentals, and learn quickly from every project I
+              ship.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View Projects</a>
+              <a class="button button-secondary" href="#contact">Contact Me</a>
             </div>
-            <div class="hero-copy">
-              <p class="eyebrow">Fresh Graduate · Computer Science</p>
-              <h1>Dhruv Ramachundrah</h1>
-              <h2>Software Developer | Problem Solver </h2>
-              <p class="location">Mauritius</p>
+
+            <div class="quick-links" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/dhruv-ramachundrah/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="mailto:ramachundrahdhruv@gmail.com">Email</a>
             </div>
           </div>
 
-          <p class="intro" id="about">
-            I am a recently graduated Computer Science student who enjoys turning
-            ideas into clean, useful products. I build responsive web apps,
-            focus on strong fundamentals, and learn quickly from every project I
-            ship.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Contact Me</a>
-            <a class="button button-secondary" href="#projects">View Projects</a>
-          </div>
-
-          <div class="quick-links" aria-label="Social links">
-            <a href="https://www.linkedin.com/in/dhruv-ramachundrah/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/Dhruv-2204" target= "_blank" rel="noreferrer">GitHub</a>
-            <a href="ramachundrahdhruv@gmail.com">Email</a>
+          <div class="intro-highlights" aria-label="Highlights">
+            <article class="intro-stat">
+              <span>Focus</span>
+              <strong>Responsive UI + Full-Stack Foundations</strong>
+            </article>
+            <article class="intro-stat">
+              <span>Based in</span>
+              <strong>Mauritius</strong>
+            </article>
+            <article class="intro-stat">
+              <span>Open to</span>
+              <strong>Graduate Roles &amp; Internships</strong>
+            </article>
           </div>
         </section>
 
@@ -67,15 +75,67 @@
             <p>Current tech stack</p>
             <h3>Tools I use to build and learn</h3>
           </div>
-          <div class="skills-grid">
-            <article class="skill-card">HTML5</article>
-            <article class="skill-card">CSS3</article>
-            <article class="skill-card">JavaScript</article>
-            <article class="skill-card">React</article>
-            <article class="skill-card">Node.js</article>
-            <article class="skill-card">TypeScript</article>
-            <article class="skill-card">Git</article>
-            <article class="skill-card">SQL</article>
+          <div class="stack-grid">
+            <article class="stack-card stack-card-languages">
+              <p class="stack-title">Languages</p>
+              <div class="stack-tags">
+                <span class="stack-tag">Java</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">C#</span>
+                <span class="stack-tag">SQL</span>
+              </div>
+            </article>
+
+            <article class="stack-card stack-card-frontend">
+              <p class="stack-title">Frontend</p>
+              <div class="stack-tags">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Tailwind CSS</span>
+                <span class="stack-tag">Vue</span>
+                <span class="stack-tag">Responsive UI</span>
+              </div>
+            </article>
+
+            <article class="stack-card stack-card-backend">
+              <p class="stack-title">Backend</p>
+              <div class="stack-tags">
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express.js</span>
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">REST APIs</span>
+                <span class="stack-tag">Auth</span>
+                <span class="stack-tag">MVC</span>
+                <span class="stack-tag">Entity Framework</span>
+              </div>
+            </article>
+
+            <article class="stack-card stack-card-ai">
+              <p class="stack-title">AI / ML</p>
+              <div class="stack-tags">
+                <span class="stack-tag">CNN</span>
+                <span class="stack-tag">YOLO</span>
+                <span class="stack-tag">Model Inference</span>
+                <span class="stack-tag">Data Preprocessing</span>
+                <span class="stack-tag">NLP</span>
+                <span class="stack-tag">PyTorch</span>
+                <span class="stack-tag">Scikit-learn</span>
+              </div>
+            </article>
+
+            <article class="stack-card stack-card-tools stack-card-wide">
+              <p class="stack-title">Tools</p>
+              <div class="stack-tags">
+                <span class="stack-tag">Git</span>
+                <span class="stack-tag">GitHub</span>
+                <span class="stack-tag">Postman</span>
+                <span class="stack-tag">CI/CD</span>
+                <span class="stack-tag">MongoDB</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">Copilot</span>
+                <span class="stack-tag">Claude</span>
+              </div>
+            </article>
           </div>
         </section>
 
@@ -84,23 +144,86 @@
             <p>Recent projects</p>
             <h3>Selected work that shows my range</h3>
           </div>
-          <div class="projects-grid">
-            <article class="project-card project-card-a">
-              <div class="project-tag">Web App</div>
-              <h4>Study Planner Dashboard</h4>
-              <p>
-                A productivity dashboard for students to organise tasks, track
-                deadlines, and manage weekly goals.
+          <div class="project-carousel" data-carousel>
+            <div class="carousel-header">
+              <p class="carousel-count" aria-live="polite">
+                <span data-carousel-current>01</span> / <span data-carousel-total>03</span>
               </p>
-            </article>
-            <article class="project-card project-card-b">
-              <div class="project-tag">Frontend</div>
-              <h4>Campus Events Platform</h4>
-              <p>
-                A responsive event discovery interface built to surface club
-                activities, announcements, and sign-ups.
-              </p>
-            </article>
+              <div class="carousel-controls">
+                <button class="carousel-button" type="button" data-carousel-action="prev" aria-label="Previous project">Previous</button>
+                <button class="carousel-button" type="button" data-carousel-action="next" aria-label="Next project">Next</button>
+              </div>
+            </div>
+
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <article class="project-slide project-slide-a">
+                  <div class="project-preview preview-a">
+                    <span class="preview-label">01</span>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-tag">Web App</div>
+                    <h4>Study Planner Dashboard</h4>
+                    <p>
+                      A productivity dashboard for students to organise tasks, track
+                      deadlines, and manage weekly goals.
+                    </p>
+                    <div class="project-pills">
+                      <span>React</span>
+                      <span>Node.js</span>
+                      <span>Task Tracking</span>
+                    </div>
+                    <a class="button button-primary project-link" href="https://example.com/study-planner" target="_blank" rel="noopener noreferrer">Open Project</a>
+                  </div>
+                </article>
+
+                <article class="project-slide project-slide-b">
+                  <div class="project-preview preview-b">
+                    <span class="preview-label">02</span>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-tag">Frontend</div>
+                    <h4>Campus Events Platform</h4>
+                    <p>
+                      A responsive event discovery interface built to surface club
+                      activities, announcements, and sign-ups.
+                    </p>
+                    <div class="project-pills">
+                      <span>UI Design</span>
+                      <span>Responsive Layout</span>
+                      <span>Accessibility</span>
+                    </div>
+                    <a class="button button-primary project-link" href="https://example.com/campus-events" target="_blank" rel="noopener noreferrer">Open Project</a>
+                  </div>
+                </article>
+
+                <article class="project-slide project-slide-c">
+                  <div class="project-preview preview-c">
+                    <span class="preview-label">03</span>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-tag">Portfolio</div>
+                    <h4>Personal Portfolio System</h4>
+                    <p>
+                      A modern portfolio layout with polished sections, strong visual
+                      hierarchy, and mobile-first responsiveness.
+                    </p>
+                    <div class="project-pills">
+                      <span>Design System</span>
+                      <span>Mobile First</span>
+                      <span>Blue Theme</span>
+                    </div>
+                    <a class="button button-primary project-link" href="https://example.com/portfolio-system" target="_blank" rel="noopener noreferrer">Open Project</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="carousel-dots" aria-label="Project slides">
+              <button type="button" data-carousel-dot="0" aria-label="Show project 1"></button>
+              <button type="button" data-carousel-dot="1" aria-label="Show project 2"></button>
+              <button type="button" data-carousel-dot="2" aria-label="Show project 3"></button>
+            </div>
           </div>
         </section>
 
