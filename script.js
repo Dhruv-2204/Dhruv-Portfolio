@@ -2,6 +2,37 @@ const year = new Date().getFullYear();
 
 document.title = `Fresh Graduate CS Portfolio · ${year}`;
 
+const revealItems = Array.from(document.querySelectorAll("[data-reveal]"));
+
+if (revealItems.length) {
+	revealItems.forEach((item, index) => {
+		item.style.setProperty("--reveal-delay", `${Math.min(index * 90, 360)}ms`);
+	});
+
+	if ("IntersectionObserver" in window) {
+		const revealObserver = new IntersectionObserver(
+			(entries, observer) => {
+				entries.forEach((entry) => {
+					if (!entry.isIntersecting) {
+						return;
+					}
+
+					entry.target.classList.add("is-visible");
+					observer.unobserve(entry.target);
+				});
+			},
+			{
+				threshold: 0.18,
+				rootMargin: "0px 0px -8% 0px",
+			}
+		);
+
+		revealItems.forEach((item) => revealObserver.observe(item));
+	} else {
+		revealItems.forEach((item) => item.classList.add("is-visible"));
+	}
+}
+
 const carousel = document.querySelector("[data-carousel]");
 
 if (carousel) {
@@ -14,7 +45,9 @@ if (carousel) {
 	const totalLabel = carousel.querySelector("[data-carousel-total]");
 
 	let currentIndex = 0;
+	let autoplayId = null;
 	const slideCount = slides.length;
+	const autoplayMs = 4500;
 
 	const render = () => {
 		track.style.transform = `translateX(-${currentIndex * 100}%)`;
@@ -35,25 +68,64 @@ if (carousel) {
 		render();
 	};
 
-	prevButton.addEventListener("click", () => goTo(currentIndex - 1));
-	nextButton.addEventListener("click", () => goTo(currentIndex + 1));
+	const stopAutoplay = () => {
+		if (autoplayId) {
+			clearInterval(autoplayId);
+			autoplayId = null;
+		}
+	};
+
+	const startAutoplay = () => {
+		stopAutoplay();
+		autoplayId = setInterval(() => {
+			goTo(currentIndex + 1);
+		}, autoplayMs);
+	};
+
+	prevButton.addEventListener("click", () => {
+		goTo(currentIndex - 1);
+		startAutoplay();
+	});
+
+	nextButton.addEventListener("click", () => {
+		goTo(currentIndex + 1);
+		startAutoplay();
+	});
 
 	dots.forEach((dot) => {
 		dot.addEventListener("click", () => {
 			goTo(Number(dot.dataset.carouselDot));
+			startAutoplay();
 		});
 	});
 
 	carousel.addEventListener("keydown", (event) => {
 		if (event.key === "ArrowLeft") {
 			goTo(currentIndex - 1);
+			startAutoplay();
 		}
 
 		if (event.key === "ArrowRight") {
 			goTo(currentIndex + 1);
+			startAutoplay();
 		}
+	});
+
+	carousel.addEventListener("mouseenter", stopAutoplay);
+	carousel.addEventListener("mouseleave", startAutoplay);
+	carousel.addEventListener("focusin", stopAutoplay);
+	carousel.addEventListener("focusout", startAutoplay);
+
+	document.addEventListener("visibilitychange", () => {
+		if (document.hidden) {
+			stopAutoplay();
+			return;
+		}
+
+		startAutoplay();
 	});
 
 	carousel.setAttribute("tabindex", "0");
 	render();
+	startAutoplay();
 }

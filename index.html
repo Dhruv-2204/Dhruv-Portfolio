@@ -29,16 +29,16 @@
       </header>
 
       <main class="portfolio-card">
-        <section class="intro-panel" id="about">
+        <section class="intro-panel" id="about" data-reveal>
           <div class="intro-copy">
             <p class="eyebrow">Fresh Graduate · Computer Science</p>
             <h1>Dhruv Ramachundrah</h1>
             <h2>Software Developer | Problem Solver</h2>
             <p class="location">Mauritius</p>
             <p class="intro">
-              I am a recently graduated Computer Science student who enjoys turning
-              ideas into clean, useful products. I build responsive web apps,
-              focus on strong fundamentals, and learn quickly from every project I
+              I am a recently graduated <span class="emphasis">Computer Science</span> student who enjoys turning
+              ideas into clean, useful products. I build <span class="emphasis">responsive web apps</span>,
+              focus on <span class="emphasis">strong fundamentals</span>, and learn quickly from every project I
               ship.
             </p>
 
@@ -54,29 +54,45 @@
             </div>
           </div>
 
-          <div class="intro-highlights" aria-label="Highlights">
-            <article class="intro-stat">
-              <span>Focus</span>
-              <strong>Responsive UI + Full-Stack Foundations</strong>
+          <div class="intro-highlights" aria-label="Skill ratings">
+            <article class="intro-stat intro-stat-soft" data-reveal>
+              <span>Java</span>
+              <strong>2 projects</strong>
             </article>
-            <article class="intro-stat">
-              <span>Based in</span>
-              <strong>Mauritius</strong>
+            <article class="intro-stat intro-stat-bright" data-reveal>
+              <span>Node.js</span>
+              <strong>5 projects</strong>
             </article>
-            <article class="intro-stat">
-              <span>Open to</span>
-              <strong>Graduate Roles &amp; Internships</strong>
+            <!-- <article class="intro-stat intro-stat-soft" data-reveal>
+              <span>HTML, CSS, Tailwind</span>
+              <strong>4 projects</strong>
+            </article> -->
+            <article class="intro-stat intro-stat-bright" data-reveal>
+              <span>Python</span>
+              <strong>3 projects</strong>
+            </article>
+            <!-- <article class="intro-stat intro-stat-soft" data-reveal>
+              <span>C#</span>
+              <strong>1 project</strong>
+            </article> -->
+            <article class="intro-stat intro-stat-bright" data-reveal>
+              <span>Vue.js</span>
+              <strong>2 projects</strong>
+            </article>
+            <article class="intro-stat intro-stat-featured" data-reveal>
+              <span>Trained models</span>
+              <strong>+6 projects</strong>
             </article>
           </div>
         </section>
 
-        <section class="section" id="skills">
+        <section class="section" id="skills" data-reveal>
           <div class="section-heading">
             <p>Current tech stack</p>
-            <h3>Tools I use to build and learn</h3>
+            <h3>Tools I use to build <span class="emphasis">clean interfaces</span> and <span class="emphasis">reliable systems</span></h3>
           </div>
           <div class="stack-grid">
-            <article class="stack-card stack-card-languages">
+            <article class="stack-card stack-card-languages" data-reveal>
               <p class="stack-title">Languages</p>
               <div class="stack-tags">
                 <span class="stack-tag">Java</span>
@@ -87,7 +103,7 @@
               </div>
             </article>
 
-            <article class="stack-card stack-card-frontend">
+            <article class="stack-card stack-card-frontend" data-reveal>
               <p class="stack-title">Frontend</p>
               <div class="stack-tags">
                 <span class="stack-tag">React</span>
@@ -97,7 +113,7 @@
               </div>
             </article>
 
-            <article class="stack-card stack-card-backend">
+            <article class="stack-card stack-card-backend" data-reveal>
               <p class="stack-title">Backend</p>
               <div class="stack-tags">
                 <span class="stack-tag">Node.js</span>
@@ -110,7 +126,7 @@
               </div>
             </article>
 
-            <article class="stack-card stack-card-ai">
+            <article class="stack-card stack-card-ai" data-reveal>
               <p class="stack-title">AI / ML</p>
               <div class="stack-tags">
                 <span class="stack-tag">CNN</span>
@@ -123,7 +139,7 @@
               </div>
             </article>
 
-            <article class="stack-card stack-card-tools stack-card-wide">
+            <article class="stack-card stack-card-tools stack-card-wide" data-reveal>
               <p class="stack-title">Tools</p>
               <div class="stack-tags">
                 <span class="stack-tag">Git</span>
@@ -132,22 +148,25 @@
                 <span class="stack-tag">CI/CD</span>
                 <span class="stack-tag">MongoDB</span>
                 <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">Azure</span>
+                <span class="stack-tag">Jira</span>
                 <span class="stack-tag">Copilot</span>
                 <span class="stack-tag">Claude</span>
+
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section" id="projects">
+        <section class="section" id="projects" data-reveal>
           <div class="section-heading">
             <p>Recent projects</p>
-            <h3>Selected work that shows my range</h3>
+            <h3>Selected work that shows my <span class="emphasis">range</span> and <span class="emphasis">problem-solving</span></h3>
           </div>
           <div class="project-carousel" data-carousel>
             <div class="carousel-header">
               <p class="carousel-count" aria-live="polite">
-                <span data-carousel-current>01</span> / <span data-carousel-total>03</span>
+                <span data-carousel-current>01</span> / <span data-carousel-total>05</span>
               </p>
               <div class="carousel-controls">
                 <button class="carousel-button" type="button" data-carousel-action="prev" aria-label="Previous project">Previous</button>
@@ -157,63 +176,152 @@
 
             <div class="carousel-viewport">
               <div class="carousel-track">
-                <article class="project-slide project-slide-a">
+                <article class="project-slide project-slide-a" data-reveal>
                   <div class="project-preview preview-a">
                     <span class="preview-label">01</span>
                   </div>
                   <div class="project-content">
-                    <div class="project-tag">Web App</div>
-                    <h4>Study Planner Dashboard</h4>
+                    <div class="project-head">
+                      <span class="project-system">AI + CV</span>
+                    </div>
+                    <h4><span class="emphasis">Posture Correction</span> App</h4>
                     <p>
-                      A productivity dashboard for students to organise tasks, track
-                      deadlines, and manage weekly goals.
+                      <span class="emphasis">Real-time</span> posture detection app that tracks body alignment,
+                      surfaces instant feedback, and helps users build healthier
+                      workstation habits.
                     </p>
                     <div class="project-pills">
+                      <span>Computer Vision</span>
+                      <span>Pose Estimation</span>
                       <span>React</span>
-                      <span>Node.js</span>
-                      <span>Task Tracking</span>
+                      <span>Python</span>
                     </div>
-                    <a class="button button-primary project-link" href="https://example.com/study-planner" target="_blank" rel="noopener noreferrer">Open Project</a>
+                    <ul class="project-notes">
+                      <li><strong>Status:</strong> Completed core posture flow and user feedback loop.</li>
+                      <li><strong>Outcome:</strong> Better posture awareness with instant corrective prompts.</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button button-primary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">Frontend Link</a>
+                      <a class="button button-secondary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">Backend Link</a>
+                    </div>
                   </div>
                 </article>
 
-                <article class="project-slide project-slide-b">
+                <article class="project-slide project-slide-b" data-reveal>
                   <div class="project-preview preview-b">
                     <span class="preview-label">02</span>
                   </div>
                   <div class="project-content">
-                    <div class="project-tag">Frontend</div>
-                    <h4>Campus Events Platform</h4>
+                    <div class="project-head">
+                      <span class="project-system">C#/.NET 8</span>
+                    </div>
+                    <h4><span class="emphasis">Car Rental System</span> (C# .NET 8.0)</h4>
                     <p>
-                      A responsive event discovery interface built to surface club
-                      activities, announcements, and sign-ups.
+                      Full-stack booking platform for vehicle search, reservation
+                      workflows, and rental lifecycle management with admin tooling.
                     </p>
                     <div class="project-pills">
-                      <span>UI Design</span>
-                      <span>Responsive Layout</span>
-                      <span>Accessibility</span>
+                      <span>C#</span>
+                      <span>.NET 8</span>
+                      <span>Entity Framework</span>
+                      <span>REST APIs</span>
                     </div>
-                    <a class="button button-primary project-link" href="https://example.com/campus-events" target="_blank" rel="noopener noreferrer">Open Project</a>
+                    <ul class="project-notes">
+                      <li><strong>Problem:</strong> Disconnected booking flow and limited rental visibility.</li>
+                      <li><strong>Outcome:</strong> Reliable booking, return tracking, and fleet insights.</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button button-primary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">Frontend Link</a>
+                      <a class="button button-secondary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">Backend Link</a>
+                    </div>
                   </div>
                 </article>
 
-                <article class="project-slide project-slide-c">
+                <article class="project-slide project-slide-c" data-reveal>
                   <div class="project-preview preview-c">
                     <span class="preview-label">03</span>
                   </div>
                   <div class="project-content">
-                    <div class="project-tag">Portfolio</div>
-                    <h4>Personal Portfolio System</h4>
+                    <div class="project-head">
+                      <span class="project-system">AI + APIs</span>
+                    </div>
+                    <h4>Avengers Website <span class="emphasis">(Multi-Module Intelligent Platform)</span></h4>
                     <p>
-                      A modern portfolio layout with polished sections, strong visual
-                      hierarchy, and mobile-first responsiveness.
+                      Multi-module platform combining analytics, AI-enabled
+                      summarization, and API-driven utilities for rich data workflows.
                     </p>
                     <div class="project-pills">
-                      <span>Design System</span>
-                      <span>Mobile First</span>
-                      <span>Blue Theme</span>
+                      <span>Analytics</span>
+                      <span>Forecasting</span>
+                      <span>Gemini API</span>
+                      <span>Pipelines</span>
                     </div>
-                    <a class="button button-primary project-link" href="https://example.com/portfolio-system" target="_blank" rel="noopener noreferrer">Open Project</a>
+                    <ul class="project-notes">
+                      <li><strong>Architecture:</strong> Modular services with API orchestration.</li>
+                      <li><strong>Outcome:</strong> Decision-ready dashboards and AI-assisted insights.</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button button-primary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">Frontend Link</a>
+                      <a class="button button-secondary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">Backend Link</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project-slide project-slide-d" data-reveal>
+                  <div class="project-preview preview-d">
+                    <span class="preview-label">04</span>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-head">
+                      <span class="project-system">AI / ML</span>
+                    </div>
+                    <h4><span class="emphasis">Office Item Recognition</span> System</h4>
+                    <p>
+                      Recognition pipeline for office objects to automate inventory
+                      awareness and improve workstation-level resource tracking.
+                    </p>
+                    <div class="project-pills">
+                      <span>Object Detection</span>
+                      <span>YOLO</span>
+                      <span>Model Inference</span>
+                      <span>NLP Labels</span>
+                    </div>
+                    <ul class="project-notes">
+                      <li><strong>Status:</strong> Detection and tagging pipeline completed.</li>
+                      <li><strong>Outcome:</strong> Faster item lookup and lower manual logging.</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button button-primary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project-slide project-slide-e" data-reveal>
+                  <div class="project-preview preview-e">
+                    <span class="preview-label">05</span>
+                  </div>
+                  <div class="project-content">
+                    <div class="project-head">
+                      <span class="project-system">ROBOTICS + IoT</span>
+                    </div>
+                    <h4>Robotic Garage Assistant <span class="emphasis">(Guido)</span></h4>
+                    <p>
+                      Smart garage assistant coordinating entry recognition, action
+                      triggers, and garage task automation through robotic controls.
+                    </p>
+                    <div class="project-pills">
+                      <span>Embedded Control</span>
+                      <span>Automation</span>
+                      <span>Sensors</span>
+                      <span>System Integration</span>
+                    </div>
+                    <ul class="project-notes">
+                      <li><strong>Problem:</strong> Manual, repetitive garage operations.</li>
+                      <li><strong>Outcome:</strong> Streamlined safety checks and assisted automation.</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button button-primary project-link" href="https://github.com/Dhruv-2204" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
                   </div>
                 </article>
               </div>
@@ -223,14 +331,16 @@
               <button type="button" data-carousel-dot="0" aria-label="Show project 1"></button>
               <button type="button" data-carousel-dot="1" aria-label="Show project 2"></button>
               <button type="button" data-carousel-dot="2" aria-label="Show project 3"></button>
+              <button type="button" data-carousel-dot="3" aria-label="Show project 4"></button>
+              <button type="button" data-carousel-dot="4" aria-label="Show project 5"></button>
             </div>
           </div>
         </section>
 
-        <section class="section contact-panel" id="contact">
+        <section class="section contact-panel" id="contact" data-reveal>
           <div class="section-heading">
             <p>Let’s connect</p>
-            <h3>Open to fresh-graduate and full-time positions</h3>
+            <h3>Open to <span class="emphasis">fresh-graduate</span> and <span class="emphasis">full-time</span> positions</h3>
           </div>
           <p>
             If you are hiring for a junior developer, software engineer, or
