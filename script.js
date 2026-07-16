@@ -47,7 +47,7 @@ if (carousel) {
 	let currentIndex = 0;
 	let autoplayId = null;
 	const slideCount = slides.length;
-	const autoplayMs = 4500;
+	const autoplayMs = 8500;
 
 	const render = () => {
 		track.style.transform = `translateX(-${currentIndex * 100}%)`;

@@ -253,7 +253,9 @@ body::before {
 .topnav a:focus-visible,
 .quick-links a:hover,
 .quick-links a:focus-visible {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  font-weight: 800;
+  color: #f9fcfc;
 }
 
 .button-primary {
@@ -530,7 +532,7 @@ body::before {
 .stack-card {
   padding: 22px;
   border-radius: 24px;
-  border: 1px solid rgba(125, 170, 255, 0.18);
+  border: 4px solid rgba(125, 170, 255, 0.18);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
   box-shadow: var(--shadow);
   min-height: 180px;
@@ -688,7 +690,7 @@ body::before {
 
 .carousel-track {
   display: flex;
-  transition: transform 320ms ease;
+  transition: transform 520ms ease;
 }
 
 .project-slide {
@@ -1053,6 +1055,7 @@ body::before {
   .stack-card {
     padding: 18px;
     border-radius: 20px;
+    border: 10px solid rgba(129, 255, 125, 0.16);
     min-height: auto;
   }
 
@@ -1063,10 +1066,11 @@ body::before {
   .intro-stat {
     min-height: 96px;
     padding: 16px;
+    font-size: 3rem;
   }
 
   .intro-stat strong {
-    font-size: 1.65rem;
+    font-size: 1.25rem;
   }
 
   .intro-stat-featured strong {
